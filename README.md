@@ -27,7 +27,7 @@ Create two Virtual Machines:
 
 1. DC-1 (Windows Server 2022)
 
-2. Client-1 (Windows Pro)
+2. Client-1 (Windows 10 Pro)
 
 (Note-Both of the Virtual Machines should be in the same resourse group)
 
@@ -35,7 +35,7 @@ Create two Virtual Machines:
 
 <p>
 
-![AD part 1](https://i.imgur.com/5CNb6ay.gif)
+![AD part 1](https://i.imgur.com/BHn4nAd.gif)
 
 </p>
 <p>
@@ -47,27 +47,58 @@ Create two Virtual Machines:
 
 <p>
 
-![AD part 2]()
+![AD part 2](https://i.imgur.com/Uefi9Nf.gif)
 
 </p>
 <p>
 
-- NIC is network interface
-- Proceeded to DC-1 VM NIC then went to the IP configs to set the IP address to static
-- Since its been set to static the IP adress will not change for DC-1
-- Login to remote desktop with client-1 public IP address and my username and passoword. 
-- My username is labuser
-- Copied DC-1 private IP address
-- Went to CMD in CLient-1 and ping -t DC-1 private ip adress. ping -t 10.0.0.4
+
+
+Set the DC-1 Private IP address to static
+
+Go to Virtual Machines --> DC-1 | Networking --> Network Interface | IP Configurations
+
+
+
+
+
 </p>
 <br />
 
 <p>
 
-![AD part 3](https://user-images.githubusercontent.com/58159183/210910713-5ec0560a-1f38-4df7-bf94-08ba1fa31bb0.gif)
+![AD part 3](https://i.imgur.com/DK5eW9d.gif)
 
 </p>
 <p>
+
+
+Login to Client-1 with remote desktop (Copy the public IP Address from the azure portal and paste it on remote desktop)
+
+Once you are logged in the Client-1 Virtual Machine, open the Command line and enter the following command
+
+"ping -t 10.3.0.4 (DC-1 private IP Address)"
+
+The ping request will be timed out 
+
+In order to succeed the ping we will need to open DC-1 VM and enable inbound rules
+
+Login to DC-1 with remote desktop using its public IP address
+
+Go to wf.msc -> Inbound rules -> Enable the following inbound rules
+
+1. Core Networking Diagnostics - ICMP Echo Request (ICMPv6-In) - Private (Profile)
+
+2. Core Networking Diagnostics - ICMP Echo Request (ICMPv6-In) - Domain (Profile)
+
+Once you enable the inbound rules go back to Client-1 Virtual Machine and check the ping request
+
+The ping request is now succeed
+
+
+
+
+
 
 - Login to DC-1 with it's public IP adress in remote desktop
 - Then went to wf.msc which stands for firewall and network protection in windows security
