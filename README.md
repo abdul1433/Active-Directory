@@ -25,16 +25,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 Create two Virtual Machines:
 
-DC-1 (Windows Server 2022)
+1. DC-1 (Windows Server 2022)
 
-Client-1 (Windows Pro)
+2. Client-1 (Windows Pro)
 
-(Note-Both of the Virtual Machines should be in the same resourse group
+(Note-Both of the Virtual Machines should be in the same resourse group)
+
 
 
 <p>
 
-![AD part 1]()
+![AD part 1](https://i.imgur.com/5CNb6ay.gif)
 
 </p>
 <p>
@@ -46,7 +47,7 @@ Client-1 (Windows Pro)
 
 <p>
 
-![AD part 2](https://user-images.githubusercontent.com/58159183/210909239-42eeb700-1958-4660-92e2-321fef7d3c93.gif)
+![AD part 2]()
 
 </p>
 <p>
