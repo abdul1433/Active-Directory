@@ -72,6 +72,9 @@ Go to Virtual Machines --> DC-1 | Networking --> Network Interface | IP Configur
 </p>
 <p>
 
+  
+  
+  
 
 Login to Client-1 with remote desktop (Copy the public IP Address from the azure portal and paste it on the remote desktop connection)
 
@@ -101,13 +104,24 @@ Stop the ping using ctrl+c
 
   
 
-
+  
+ 
 </p>
 <br />
 
 <p>
 
 ![AD part 4](https://i.imgur.com/C7oDVXM.gif)
+</p>
+
+<p>
+
+![AD part 3](https://i.imgur.com/DK5eW9d.gif)
 
 </p>
 <p>
+</p>
+<p>
+  
+  
+  
