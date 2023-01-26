@@ -101,27 +101,19 @@ Once you enable the inbound rules go back to Client-1 Virtual Machine and check 
 The ping request is now succeed
   
 Stop the ping using ctrl+c
-
-  
-
-  
- 
 </p>
 <br />
 
 <p>
 
 ![AD part 4](https://i.imgur.com/C7oDVXM.gif)
+
+<IMG SRC="https://i.imgur.com/C7oDVXM.gif">
 </p>
 
-<p>
 
-![AD part 3](https://i.imgur.com/DK5eW9d.gif)
 
-</p>
-<p>
-</p>
-<p>
+
   
   
   
