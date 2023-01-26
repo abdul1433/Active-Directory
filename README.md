@@ -106,14 +106,14 @@ Stop the ping using ctrl+c
 
 <p>
 
-![AD part 4](https://user-images.githubusercontent.com/58159183/210911345-9b60044b-35cb-4a3b-86b2-1e0b6eb5aa7a.gif)
+![AD part 4](https://i.imgur.com/Ngeu4QZ.gif)
 
 
 
   
 <p>
 
-![AD part 5](https://user-images.githubusercontent.com/58159183/210912864-a5685983-48e8-411e-adee-0415a7a439ce.gif)
+![AD part 5](https://i.imgur.com/Do68Puk.gif)
   
   
  - Went back to DC-1 VM and in the server manager I click add roles and features 
