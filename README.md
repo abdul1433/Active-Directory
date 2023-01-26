@@ -108,7 +108,7 @@ Stop the ping using ctrl+c
 
 ![AD part 4](https://i.imgur.com/C7oDVXM.gif)
 
-<IMG SRC="https://i.imgur.com/C7oDVXM.gif">
+<IMG SRC=https://i.imgur.com/C7oDVXM.gif/>
 </p>
 
 
