@@ -73,7 +73,7 @@ Go to Virtual Machines --> DC-1 | Networking --> Network Interface | IP Configur
 <p>
 
 
-Login to Client-1 with remote desktop (Copy the public IP Address from the azure portal and paste it on remote desktop)
+Login to Client-1 with remote desktop (Copy the public IP Address from the azure portal and paste it on the remote desktop connection)
 
 Once you are logged in the Client-1 Virtual Machine, open the Command line and enter the following command
 
@@ -81,29 +81,25 @@ Once you are logged in the Client-1 Virtual Machine, open the Command line and e
 
 The ping request will be timed out 
 
-In order to succeed the ping we will need to open DC-1 VM and enable inbound rules
+In order to succeed the ping we will need to open DC-1 VM and enable some inbound rules
 
 Login to DC-1 with remote desktop using its public IP address
 
 Go to wf.msc -> Inbound rules -> Enable the following inbound rules
 
-1. Core Networking Diagnostics - ICMP Echo Request (ICMPv6-In) - Private (Profile)
+1. Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) - Private (Profile)
 
-2. Core Networking Diagnostics - ICMP Echo Request (ICMPv6-In) - Domain (Profile)
+2. Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) - Domain (Profile)
 
 Once you enable the inbound rules go back to Client-1 Virtual Machine and check the ping request
 
 The ping request is now succeed
+  
+Stop the ping using ctrl+c
 
 
 
 
-
-
-- Login to DC-1 with it's public IP adress in remote desktop
-- Then went to wf.msc which stands for firewall and network protection in windows security
-- Then went to inbound rules 
-- As you can see the the ping request is still time out in the CMD
 
 </p>
 <br />
@@ -112,16 +108,18 @@ The ping request is now succeed
 
 ![AD part 4](https://user-images.githubusercontent.com/58159183/210911345-9b60044b-35cb-4a3b-86b2-1e0b6eb5aa7a.gif)
 
-- In inbound rules I enabled two ICMPv4 called Core networking Diagnostics- ICMP Echo Request in the DC-1 Vm
-- Proceeded to check back at the CLient-1 VM to see the ping succeed 
-- I stop the ping from continuing by using ctrl-c
-- Went back to DC-1 VM and in the server manager I click add roles and features 
-- Proceeded to install active directory domain services
+
+
   
 <p>
 
 ![AD part 5](https://user-images.githubusercontent.com/58159183/210912864-a5685983-48e8-411e-adee-0415a7a439ce.gif)
   
+  
+ - Went back to DC-1 VM and in the server manager I click add roles and features 
+- Proceeded to install active directory domain services 
+  
+ 
 - Click on promote this server to domain controller in server manger to finsih installing active directory
 - Added a new forest and name my root domain mydomain.com
 - Active directory is installed
