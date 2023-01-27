@@ -101,15 +101,53 @@ Once you enable the inbound rules go back to Client-1 Virtual Machine and check 
 The ping request is now succeed
   
 Stop the ping using ctrl+c
+
+
 </p>
 <br />
 
 <p>
 
-![AD part 4](https://i.imgur.com/C7oDVXM.gif)
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/121186222/215218260-9825b9a7-f1aa-488c-9560-b74c794b4d0c.gif)
 
-<IMG SRC=https://i.imgur.com/C7oDVXM.gif/>
-</p>
+  
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/121186222/215218444-ce25fe29-2d7f-4888-8a87-4088fd0f01d8.gif)
+
+  
+
+<h3>Installing Active Directory</h3>
+
+Go back to DC-1 and open Server Manager
+
+In Server Manager click on "Add roles and features"
+
+Add a new forest and name the domain as mydomain.com
+
+Proceed to install Active Directory
+
+After the installation of Active Directory, the DC-1 VM will be logged off and you will need to restart the VM
+
+Login back to the DC-1 with the context of the domain 
+
+Enter the username as mydomain.com\labuser and use the password as before you used to login to DC-1 VM
+
+Once you login to the DC-1 VM go to Server Manager --> Tools --> Active Directory Users and Computers --> mydomain.com 
+
+In the Active Directory Users and Computers create to Organizational Units
+
+1. _EMPLOYEES
+2. _ADMINS
+
+In the _ADMINS section create a new user named as "Jessica Doe" and create credentials for Jessica Doe
+
+Username- Jessica_admin
+Password- ********
+
+Make Jessica Doe an administrator by going to properties and making her a member of domain admin group
+
+
+
+
 
 
 
