@@ -127,18 +127,24 @@ Proceed to install Active Directory
 
 After the installation of Active Directory, the DC-1 VM will be logged off and you will need to restart the VM
 
-Login back to the DC-1 with the context of the domain 
+
+
+
+
+
+
+Log back in to the DC-1 with the context of the domain 
 
 Enter the username as mydomain.com\labuser and use the password as before you used to login to DC-1 VM
 
-Once logged in go to Server Manager --> Tools --> Active Directory Users and Computers --> mydomain.com 
+Once logged in, go to Server Manager --> Tools --> Active Directory Users and Computers --> mydomain.com 
 
 In the Active Directory Users and Computers create two Organizational Units
 
 1. _EMPLOYEES
 2. _ADMINS
 
-In the _ADMINS section create a new user named as "Jessica Doe" and create credentials for Jessica Doe
+In the _ADMINS section create a new user named as "Jessica Doe" and create new credentials for the user
 
 -Username- Jessica_admin
 
@@ -146,10 +152,38 @@ In the _ADMINS section create a new user named as "Jessica Doe" and create crede
 
 Make Jessica Doe an administrator by going to properties and making her a member of Domain Admin group
 
+We can now login to DC-1 Virtual Machine in the context of Jessica Doe
 
-Logg of DC-1 and then log back in as Jessica Doe
 
-Once logged in, go to start --> system --> Rename this Pc (Advnaced)
+
+
+
+
+
+
+Make Client-1 a member of mydomain.com, to do so we will need to set the Client-1 DNS settings to DC-1 private IP Address
+
+Set the Client-1 DNS settings to DC-1 private IP address
+
+In Azure Portal go to DC-1 --> Networking --> Copy the NIC Private IP Address
+
+Next go to Client-1 --> Networking --> Network Interface --> DNS Servers --> Click on Custom --> Paste the NIC Private IP address --> Save the changes
+
+Restart the Client-1 Virtual Machine in Azure Portal 
+
+
+
+
+
+
+Login to Client-1 Virtual Machine and then go to start --> system --> Rename this Pc (Advnaced)
+
+Click on change and make Client-1 a member of mydomain.com
+
+
+
+
+
 
 
 
