@@ -131,19 +131,31 @@ Login back to the DC-1 with the context of the domain
 
 Enter the username as mydomain.com\labuser and use the password as before you used to login to DC-1 VM
 
-Once you login to the DC-1 VM go to Server Manager --> Tools --> Active Directory Users and Computers --> mydomain.com 
+Once logged in go to Server Manager --> Tools --> Active Directory Users and Computers --> mydomain.com 
 
-In the Active Directory Users and Computers create to Organizational Units
+In the Active Directory Users and Computers create two Organizational Units
 
 1. _EMPLOYEES
 2. _ADMINS
 
 In the _ADMINS section create a new user named as "Jessica Doe" and create credentials for Jessica Doe
 
-Username- Jessica_admin
-Password- ********
+-Username- Jessica_admin
 
-Make Jessica Doe an administrator by going to properties and making her a member of domain admin group
+-Password- ********
+
+Make Jessica Doe an administrator by going to properties and making her a member of Domain Admin group
+
+
+Logg of DC-1 and then log back in as Jessica Doe
+
+Once logged in, go to start --> system --> Rename this Pc (Advnaced)
+
+
+
+
+
+
 
 
 
