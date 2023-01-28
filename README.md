@@ -129,6 +129,7 @@ After the installation of Active Directory, the DC-1 VM will be logged off and y
 
 
 
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/121186222/215289087-59d9512a-76f2-4b01-8dcd-147b8ba74e07.gif)
 
 
 
@@ -155,9 +156,11 @@ Make Jessica Doe an administrator by going to properties and making her a member
 We can now login to DC-1 Virtual Machine in the context of Jessica Doe
 
 
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/121186222/215294967-f4bf7635-dad6-4e67-9277-67364774abfc.gif)
 
 
 
+![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/121186222/215295055-03192021-cd72-402b-90de-c4df09bb80a5.gif)
 
 
 
