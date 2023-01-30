@@ -188,6 +188,38 @@ Login to Client-1 Virtual Machine and then go to start --> system --> Rename thi
 
 Click on change and make Client-1 a member of mydomain.com
 
+(NOTE- the Client-1 is the member of domain admin it can be logged it thorugh any domain accounts)
+
+
+
+![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/121186222/215401913-d57bc682-7543-4e41-8c6a-2d1b6d069aeb.gif)
+
+
+
+![ezgif com-gif-maker (11)](https://user-images.githubusercontent.com/121186222/215401917-34ec14aa-8d2e-4152-9f30-294172fa52dd.gif)
+
+
+
+
+Make all users accessible to Client-1 VM
+
+Login to Client-1 as Jessica Doe 
+
+Once logged in go to Start --> System --> Select users that can remotely access this PC --> Add --> Domain Users --> Check
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
