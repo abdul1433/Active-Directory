@@ -175,7 +175,12 @@ Next go to Client-1 --> Networking --> Network Interface --> DNS Servers --> Cli
 Restart the Client-1 Virtual Machine in Azure Portal 
 
 
-a
+![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/121186222/215374000-9c5cf893-5824-4830-82dd-47ee24e171ab.gif)
+
+
+
+![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/121186222/215374004-374bd5f5-14cf-4972-b129-90368fc04d15.gif)
+
 
 
 
