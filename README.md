@@ -209,6 +209,26 @@ Once logged in go to Start --> System --> Remote Desktop --> Select users that c
 
 
 
+![ezgif com-gif-maker (12)](https://user-images.githubusercontent.com/121186222/215405563-65d525c9-2b05-4b1f-8e52-da875239f38a.gif)
+
+
+![ezgif com-gif-maker (13)](https://user-images.githubusercontent.com/121186222/215405622-83c58314-7205-48d1-bfa0-ce2399b16a61.gif)
+
+
+Go back to DC-1 VM and open Windows PowerShell ISE as an adminstrator
+
+Open this link and copy the scrip and paste it in the PowerShell ISE (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
+
+Run the scrip 
+
+Accounts are being created in the _EMPLOYEES section you created in Active Directory
+
+You can login to Client-1 with any of the user in the _EMPLOYEES Organizational Unit
+
+For practice we will take a random user from the list and try to login using his credentials
+
+
+
 
 
 
