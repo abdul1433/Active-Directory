@@ -29,7 +29,7 @@ Create two Virtual Machines:
 
 2. Client-1 (Windows 10 Pro)
 
-(Note-Both of the Virtual Machines should be in the same resourse group)
+(Note-Both of the Virtual Machines should be in the same resourse group and have the same Virtual network)
 
 
 
