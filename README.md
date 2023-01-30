@@ -205,7 +205,7 @@ Make all users accessible to Client-1 VM
 
 Login to Client-1 as Jessica Doe 
 
-Once logged in go to Start --> System --> Select users that can remotely access this PC --> Add --> Domain Users --> Check
+Once logged in go to Start --> System --> Remote Desktop --> Select users that can remotely access this PC --> Add --> Domain Users --> Check Names --> Save
 
 
 
